@@ -27,12 +27,18 @@ console.log(a);
 console.log(b);
 
 //Task 4
-function test(x, y) 
-{
-  return ((x == 3 || y == 3) || (x + y == 3));
-}
-console.log(test(3, 3))
-console.log(test(33, 20))
+var num = 3;
+var a = 3;
+var b = 0;
+var sum = a + b ;
+
+if (a === num && sum === num ){
+    console.log("true");
+}else if (b === num && sum === num ){
+    console.log("true");
+}else {
+    console.log("false");
+};
 
 //Task 3
 function testTwo(x, y) 
@@ -89,16 +95,16 @@ cToF(26);
 fToC(95);
 
 //Task 8
-function timeConvert(n) {
-    var time = n;
-    var hours = (time / 60);
-    var rhours = Math.floor(hours);
-    var minutes = (hours - rhours) * 60;
-    var rminutes = Math.round(minutes);
-    return time + " minutes = " + rhours + " hour(s) and " + rminutes + " minute(s).";
-    }
-    
-    console.log(timeConvert(90));
+function timeConverter(n) {
+  var hours = (n / 60);
+  var leftOverHours = Math.floor(hours);
+  var minutes = (hours - leftOverHours) * 60;
+  var leftOveMinutes = Math.round(minutes);
+  return `${n} = ${leftOverHours} hours and ${leftOveMinutes} minutes`;
+  }
+
+ console.log(timeConverter(200));
+
     
 //Task 9
 var sum = 0;
